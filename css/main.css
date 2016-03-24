@@ -5,8 +5,31 @@
 .menu_mobile {
     display: none;
 }
+a {
+    text-decoration: none;
+}
+.underlink:hover {
+    text-decoration: underline;
+}
+.linkBox:link, a:visited {
+    /*    When doing effects, when hover...make a box fill in with colour*/
+    background-color: #ffffff;
+    color: #0711F2;
+    border-style: solid;
+    border-color: #0711F2;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+.linkBox:hover,
+.linkBox:active {
+    background-color: #0711F2;
+    color: white;
+}
 .images {
     /*make the image fit the blue area. currently mobile is too big and web is too small*/
+    height: 50%Vh;
 }
 .content {
     /*change font family*/
@@ -14,13 +37,6 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-#bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
 }
 #navbar ul {
     list-style-type: none;
@@ -55,14 +71,29 @@
 .module_p1 {
     background: blue;
     height: 50Vh;
+    /*image doesnt resize well when you manually stretch the window*/
+    background-image: url("../images/for_your_spies_only.JPG");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .module_p2 {
     background: green;
     height: 50Vh;
+    background-image: url("../images/quote_through.png");
+    background-size: cover;
+/*    background-repeat: no-repeat;*/
+/*    Need to resize image for web*/
+    background-position: center center;
 }
 .module_p3 {
     background: yellow;
     height: 50Vh;
+    background-image: url("../images/icff.jpg");
+    background-size: cover;
+    background-position: center center;
+}
 }
 .module_quote {
     background: purple;
