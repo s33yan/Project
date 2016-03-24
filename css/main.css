@@ -3,27 +3,20 @@
     padding: 0;
 }
 .menu_mobile {
- display:none;   
+    display: none;
 }
-
+.text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 #bg {
     position: fixed;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-}
-#bg img {
-    /*display:none;*/
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-    height: 10Vh;*/
 }
 #navbar ul {
     list-style-type: none;
@@ -46,9 +39,10 @@
 .module_landing {
     height: 100Vh;
     background-image: url("../images/ferry.jpg");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;     
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .module_description {
     background: red;
@@ -74,6 +68,9 @@
     background: magenta;
     height: 10Vh;
 }
+
+/*below is web*/
+
 @media screen and (min-width: 980px) {
     .module_landing {
         height: 100Vh;
