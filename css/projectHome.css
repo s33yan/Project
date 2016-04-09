@@ -9,7 +9,8 @@ a {
 .underlink:hover {
     text-decoration: underline;
 }
-.linkBox:link, a:visited {
+.linkBox:link,
+a:visited {
     /*    When doing effects, when hover...make a box fill in with colour*/
     background-color: #ffffff;
     color: #0711F2;
@@ -25,17 +26,7 @@ a {
     background-color: #0711F2;
     color: white;
 }
-.images {
-    /*make the image fit the blue area. currently mobile is too big and web is too small*/
-    height: 50%Vh;
-}
-.content {
-    /*change font family*/
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 /*navbar begins*/
 #navbar ul {
     list-style-type: none;
@@ -71,8 +62,18 @@ a {
 }
 
 /*navbar ends*/
+.content {
+    /*change font family*/
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-.module_landing {
+
+/*for new pages, copy things above this*/
+
+.module_landing_projects {
     height: 100Vh;
     background-image: url("../images/ferry.jpg");
     background-size: cover;
@@ -80,13 +81,8 @@ a {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-.module_description {
-    height: 100Vh;
-}
 .module_p1 {
     height: 50Vh;
-    
     /*image doesnt resize well when you manually stretch the window*/
     background-image: url("../images/for_your_spies_only.JPG");
     background-size: cover;
@@ -98,8 +94,8 @@ a {
     height: 50Vh;
     background-image: url("../images/quote_through.png");
     background-size: cover;
-/*    background-repeat: no-repeat;*/
-/*    Need to resize image for web*/
+    /*    background-repeat: no-repeat;*/
+    /*    Need to resize image for web*/
     background-position: center center;
 }
 .module_p3 {
@@ -107,16 +103,6 @@ a {
     background-image: url("../images/icff.jpg");
     background-size: cover;
     background-position: center center;
-}
-
-.module_quote {
-    height: 50Vh;
-    background-image: url("../images/sunset.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-.module_footer {
-    height: 20Vh;
 }
 
 
@@ -152,9 +138,6 @@ a {
         height: 100Vh;
         clear:both;
     }
-    .module_footer {
-        height: 30Vh;
-    }
 }
 
 /*footer begins*/
@@ -165,6 +148,7 @@ a {
 	width: 100%;
 	text-align: center;
 	font: normal 18px sans-serif;
+    clear:both;
 
 	padding: 45px;
 }
@@ -214,3 +198,4 @@ a {
 		line-height: 1.8;
 	}
 }
+

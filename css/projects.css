@@ -2,34 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.menu_mobile {
-    display: none;
-}
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#navbar ul li {
-    display: inline;
-}
-#navbar {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0px;
-    right: 0px;
-    height: 50px;
-    background-color: rgba(125, 125, 125, 0.5);
-}
-.content {
-    /*change font family*/
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
 a {
     text-decoration: none;
 }
@@ -54,43 +26,130 @@ a:visited {
     color: white;
 }
 
-/*for new pages, copy things above this*/
+/*navbar begins*/
 
-.module_landing_projects {
-    height: 100Vh;
-    background-image: url("../images/ferry.jpg");
-    background-size: cover;
-    /* <------ */
-    background-repeat: no-repeat;
-    background-position: center center;
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#navbar ul li {
+    display: inline-block;
+}
+#navbar ul li:first-child {
+    padding-right: 10%;
+}
+#navbar ul li:active ul {
+    display: block;
+}
+#navbar ul li ul {
+    display: none;
+    z-index: 1;
+}
+#navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: rgba(125, 125, 125, 0.5);
+}
+
+/*navbar ends*/
+
+.content {
+    /*    change font family*/
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.media {
+    position: relative;
+    transform: translateY(50%);
+    clear: both;
+}
+
+.project_description{
+ transform: translateY(50%);   
 }
 .module_p1 {
-    background: blue;
-    height: 50Vh;
-    /*image doesnt resize well when you manually stretch the window*/
+    /*
+    height: 10Vh;
+    image doesnt resize well when you manually stretch the window
     background-image: url("../images/for_your_spies_only.JPG");
     background-size: cover;
-    /* <------ */
-    background-repeat: no-repeat;
+    <------ background-repeat: no-repeat;
     background-position: center center;
+   
+*/
 }
-.module_p2 {
-    background: green;
-    height: 50Vh;
-    background-image: url("../images/quote_through.png");
-    background-size: cover;
-    /*    background-repeat: no-repeat;*/
-    /*    Need to resize image for web*/
-    background-position: center center;
+
+/*below is web*/
+
+@media screen and (min-width: 980px) {
+    /*    nav bar right links*/
+    #navbar ul li:first-child {
+        padding-right: 50%;
+    }
+    .module_p1 {
+        height: 30Vh;
+    }
 }
-.module_p3 {
-    background: yellow;
-    height: 50Vh;
-    background-image: url("../images/icff.jpg");
-    background-size: cover;
-    background-position: center center;
+
+/*footer begins*/
+
+.footer-basic-centered {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+    clear: both;
+    padding: 45px;
+    margin-top: 30%;
 }
-.module_footer {
-    background: magenta;
-    height: 20Vh;
+.footer-basic-centered .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-basic-centered .footer-links {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 35px 0 23px;
+    margin: 0;
+}
+.footer-basic-centered .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*footer ends*/
+
+
+/*for the footer*/
+
+@media (max-width: 600px) {
+    .footer-basic-centered {
+        padding: 35px;
+    }
+    .footer-basic-centered .footer-company-motto {
+        font-size: 18px;
+    }
+    .footer-basic-centered .footer-company-name {
+        font-size: 12px;
+    }
+    .footer-basic-centered .footer-links {
+        font-size: 14px;
+        padding: 25px 0 20px;
+    }
+    .footer-basic-centered .footer-links a {
+        line-height: 1.8;
+    }
 }
