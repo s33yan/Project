@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu_mobile {
+    display: none;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#navbar ul li {
+    display: inline;
+}
+#navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: rgba(125, 125, 125, 0.5);
+}
+.content {
+    /*change font family*/
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+a {
+    text-decoration: none;
+}
+.underlink:hover {
+    text-decoration: underline;
+}
+.linkBox:link,
+a:visited {
+    /*    When doing effects, when hover...make a box fill in with colour*/
+    background-color: #ffffff;
+    color: #0711F2;
+    border-style: solid;
+    border-color: #0711F2;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+.linkBox:hover,
+.linkBox:active {
+    background-color: #0711F2;
+    color: white;
+}
+
+/*for new pages, copy things above this*/
+
+.module_landing_projects {
+    height: 100Vh;
+    background-image: url("../images/ferry.jpg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.module_p1 {
+    background: blue;
+    height: 50Vh;
+    /*image doesnt resize well when you manually stretch the window*/
+    background-image: url("../images/for_your_spies_only.JPG");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.module_p2 {
+    background: green;
+    height: 50Vh;
+    background-image: url("../images/quote_through.png");
+    background-size: cover;
+    /*    background-repeat: no-repeat;*/
+    /*    Need to resize image for web*/
+    background-position: center center;
+}
+.module_p3 {
+    background: yellow;
+    height: 50Vh;
+    background-image: url("../images/icff.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.module_footer {
+    background: magenta;
+    height: 20Vh;
+}
