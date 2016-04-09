@@ -88,6 +88,7 @@ a {
 .module_p1 {
     background: blue;
     height: 50Vh;
+    
     /*image doesnt resize well when you manually stretch the window*/
     background-image: url("../images/for_your_spies_only.JPG");
     background-size: cover;
@@ -140,15 +141,22 @@ a {
     }
     .module_p1 {
         height: 100Vh;
+        width: 70%;
+        float:left;
     }
     .module_p2 {
-        height: 100Vh;
+        height: 50Vh;
+        width: 30%;
+        float:right;
     }
     .module_p3 {
-        height: 100Vh;
+        height: 50Vh;
+        width: 30%;
+        float:right;
     }
     .module_quote {
         height: 100Vh;
+        clear:both;
     }
     .module_footer {
         height: 30Vh;
