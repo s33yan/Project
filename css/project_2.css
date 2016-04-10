@@ -63,15 +63,15 @@ a:visited {
     /*    change font family*/
     text-align: center;
     position: relative;
-    transform: translateY(10%);
+    transform: translateY(25%);
     clear: both;
 }
+
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    /*16: 9 */
+    padding-bottom: 56.25%;  16:9 
     padding-top: 25px;
-    padding-left: 50%;
+    padding left:50%;
     height: 0;
 }
 .videoWrapper iframe {
@@ -80,10 +80,21 @@ a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    
+    
 }
-.project_description {
+/*
+.media {
     position: relative;
+    transform: translateY(50%);
+    clear: both;
+}
+*/
+
+.project_description{
+    position:relative;
+    clear:both;
+/* transform: translateY(-500%);   */
 }
 
 /*below is web*/
@@ -97,17 +108,9 @@ a:visited {
         height: 30Vh;
     }
     .videoWrapper iframe {
-        width: 50%;
-        height: 50%;
-        left: 25%;
-    }
-    .project_description {
-        position: relative;
-        transform: translateY(-400%);
-    }
-    .content {
-        transform: translateY(25%);
-    }
+    width: 50%;
+    height: 50%;
+}
 }
 
 /*footer begins*/
@@ -121,7 +124,6 @@ a:visited {
     font: normal 18px sans-serif;
     padding: 45px;
     margin-top: 30%;
-    transform: translateY(90%);
 }
 .footer-basic-centered .footer-company-name {
     color: #8f9296;
