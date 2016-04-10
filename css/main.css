@@ -25,10 +25,7 @@ a {
     background-color: #0711F2;
     color: white;
 }
-.images {
-    /*make the image fit the blue area. currently mobile is too big and web is too small*/
-    height: 50%Vh;
-}
+
 .content {
     /*change font family*/
     text-align: center;
