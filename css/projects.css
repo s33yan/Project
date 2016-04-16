@@ -4,13 +4,19 @@
 }
 a {
     text-decoration: none;
+    font: normal 18px sans-serif;
 }
 .underlink:hover {
     text-decoration: underline;
 }
+.underlink:link, .underlink:active, .underlink:visited{
+    color:white;
+}
+.name:link,.name:active, .name:visited{
+    color:white;
+}
 .linkBox:link,
 a:visited {
-    /*    When doing effects, when hover...make a box fill in with colour*/
     background-color: #ffffff;
     color: #0711F2;
     border-style: solid;
@@ -36,9 +42,10 @@ a:visited {
 }
 #navbar ul li {
     display: inline-block;
+    padding-top: 15px;
 }
 #navbar ul li:first-child {
-    padding-right: 10%;
+    padding-right: 20px;
 }
 #navbar ul li:active ul {
     display: block;
@@ -54,7 +61,9 @@ a:visited {
     left: 0px;
     right: 0px;
     height: 50px;
-    background-color: rgba(125, 125, 125, 0.5);
+    background-color: rgba(125, 125, 125, 0.7);
+    text-align: right;
+    padding-right: 10px;
 }
 
 /*navbar ends*/
@@ -63,8 +72,10 @@ a:visited {
     /*    change font family*/
     text-align: center;
     position: relative;
-    transform: translateY(10%);
+    transform: translateY(30%);
     clear: both;
+    font: normal 18px sans-serif;
+    color: black;
 }
 .videoWrapper {
     position: relative;
@@ -84,10 +95,25 @@ a:visited {
 }
 .project_description {
     position: relative;
+    padding: 20px;
 }
 
 /*below is web*/
-
+@media (min-width: 480px) {
+    #navbar ul li:first-child {
+        padding-right: 300px;
+        text-align: right;
+    }
+}
+@media (min-width: 760px) {
+    #navbar ul li:first-child {
+        padding-right: 600px;
+        text-align: right;
+    }
+    .project_description {
+        transform: translateY(20%);
+    }
+}
 @media screen and (min-width: 980px) {
     /*    nav bar right links*/
     #navbar ul li:first-child {
@@ -95,6 +121,7 @@ a:visited {
     }
     .content {
         height: 30Vh;
+        transform: translateY(25%);
     }
     .videoWrapper iframe {
         width: 50%;
@@ -103,10 +130,18 @@ a:visited {
     }
     .project_description {
         position: relative;
-        transform: translateY(-400%);
+        transform: translateY(-600%);
     }
-    .content {
-        transform: translateY(25%);
+    #navbar ul li:first-child {
+        padding-right: 1000px;
+        text-align: left;
+    }
+    #navbar ul li {
+        display: inline-block;
+        padding-left: 15px;
+    }
+    #navbar {
+        padding-right: 100px;
     }
 }
 

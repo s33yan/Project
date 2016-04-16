@@ -4,13 +4,20 @@
 }
 a {
     text-decoration: none;
+    font: normal 18px sans-serif;
 }
 .underlink:hover {
     text-decoration: underline;
 }
+.underlink:link, .underlink:active, .underlink:visited{
+    color:white;
+}
+.name:link,.name:active, .name:visited, .name:hover{
+    color:white;
+    text-decoration: none;
+}
 .linkBox:link,
 a:visited {
-    /*    When doing effects, when hover...make a box fill in with colour*/
     background-color: #ffffff;
     color: #0711F2;
     border-style: solid;
@@ -31,6 +38,8 @@ a:visited {
     position: relative;
     top: 80%;
     transform: translateY(-50%);
+    font: normal 18px sans-serif;
+    color: black;
 }
 
 /*navbar begins*/
@@ -43,9 +52,10 @@ a:visited {
 }
 #navbar ul li {
     display: inline-block;
+    padding-top: 15px;
 }
 #navbar ul li:first-child {
-    padding-right: 10%;
+    padding-right: 20px;
 }
 #navbar ul li:active ul {
     display: block;
@@ -62,6 +72,8 @@ a:visited {
     right: 0px;
     height: 50px;
     background-color: rgba(125, 125, 125, 0.5);
+    text-align: right;
+    padding-right: 10px;
 }
 
 /*navbar ends*/
@@ -205,6 +217,10 @@ input {
     .content {
         height: 200Vh;
     }
+    #navbar ul li:first-child {
+        padding-right: 300px;
+        text-align: right;
+    }
 }
 @media (min-width: 760px) {
     img {
@@ -213,6 +229,10 @@ input {
     .content {
         height: 100Vh;
         transform: translateY(3%);
+    }
+    #navbar ul li:first-child {
+        padding-right: 600px;
+        text-align: right;
     }
 }
 @media screen and (min-width: 980px) {
@@ -231,6 +251,17 @@ input {
     .module_description {
         height: 60Vh;
         transform: translateY(-90%);
+    }
+    #navbar ul li:first-child {
+        padding-right: 1000px;
+        text-align: left;
+    }
+    #navbar ul li {
+        display: inline-block;
+        padding-left: 15px;
+    }
+    #navbar {
+        padding-right: 100px;
     }
 }
 
